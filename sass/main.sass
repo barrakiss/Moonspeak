@@ -54,7 +54,7 @@
     .text
         height: 70vh
         width: 70vw
-        background-color: white
+        background-color: map-get($colors, whiteBackground)
         display: flex
         justify-content: center
         align-items: center
@@ -76,7 +76,7 @@
             width: 10vw
             height: 4vh
             font-weight: bold
-            background-color: white
+            background-color: map-get($colors, whiteBackground)
 
 //GALLERY
 
@@ -85,7 +85,7 @@
     width: 100%
     display: flex
     flex-wrap: wrap
-    div
+    .galleryDiv
         height: 50%
         width: 33.3%
         background-position: center
@@ -103,3 +103,16 @@
         background-image: url('/images/57284.jpg')
     .item6
         background-image: url('/images/67284.jpg')
+.layer
+    height: 100%
+    width: 100%
+    color: transparent
+    display: flex
+    align-items: center
+    justify-content: center
+    &:hover
+        background-color: map-get($colors, blackOpacity)
+        color: white
+        text-transform: uppercase
+        
+            
