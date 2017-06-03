@@ -150,7 +150,66 @@
                 margin: 2vh 0
                 font-family: 'Nunito', sans-serif;
                 line-height: 2.5vh
-                
 
-            
-        
+//ABOUT
+
+.about
+    height: 50vh
+    width: 100%
+    background-color: map-get($colors, background)
+    @include flexCenter    
+    div
+        width: 20%
+        height: 80%
+        margin: 0 1vw
+        background-color: map-get($colors, whiteBackground)        
+        @include flexCenter
+        flex-direction: column
+        p:nth-child(3)
+            font-weight: 600
+            text-decoration: underline
+            color: map-get($colors, blueLinks)
+        h4,p
+            width: 60%
+            margin: 1.5vh 0
+            text-align: center
+            font-family: 'Josefin Sans', sans-serif;
+        h4
+            font-weight: bold
+
+//CONTACT
+
+.contact_section
+    background-color: map-get($colors, darkBackground)
+    height: 50vh
+    width: 100%
+    @include flexCenter    
+    .contactDiv
+        height: 100%
+        width: 64vw
+        background-color: 
+        display: flex
+        .contact
+            height: 100%
+            width: 50%
+            @include flexCenter
+            flex-direction: column
+            align-items: flex-start
+            p
+                width: 18vw
+                line-height: 2vh
+                font-family: 'Josefin Sans', sans-serif;
+                color: map-get($colors, whiteBackground)
+            p:first-child
+                margin: 2vh 0
+            p:nth-child(2)
+                font-weight: bold                                      
+            p:nth-child(3)
+                margin: 0 0 2vh 0
+            p:nth-child(4)
+                font-weight: bold                          
+        .map
+            @include backgroundStyle        
+            height: 100%
+            width: 50%
+            background-image: url("/images/map7284.png")        
