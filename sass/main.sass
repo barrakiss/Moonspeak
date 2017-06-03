@@ -57,7 +57,7 @@
     @include flexCenter    
     .text
         height: 70vh
-        width: 70vw
+        width: 64vw
         background-color: map-get($colors, whiteBackground)
         @include flexCenter
         flex-direction: column
@@ -120,6 +120,7 @@
     height: 30vh
     width: 100%
     background-color:  map-get($colors, background)
+    color:  map-get($colors, darkBackground)
     @include flexCenter    
     font-family: 'Dosis', sans-serif;
     p
@@ -212,7 +213,9 @@
             @include backgroundStyle        
             height: 100%
             width: 50%
-            background-image: url("/images/map7284.png") //ZMIANA
+            iframe
+                height: 100%
+                width: 100%
 
 //FOOTER SECTION
 
@@ -235,4 +238,4 @@
                 display: inline-block
                 margin-right: 1vw
         div
-            font-size: 2vh
+            font-size: 2vh 
