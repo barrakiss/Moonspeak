@@ -137,7 +137,7 @@
     .item_knob
         height: 100%
         width: 50%
-        background-image: url("/images/77284.jpg")
+        background-image: url("/images/77284.jpg") //ZMIANA
         @include backgroundStyle
     .knob_text
         height: 100%
@@ -212,4 +212,27 @@
             @include backgroundStyle        
             height: 100%
             width: 50%
-            background-image: url("/images/map7284.png")        
+            background-image: url("/images/map7284.png") //ZMIANA
+
+//FOOTER SECTION
+
+.footer
+    height: 10vh
+    width: 100%
+    background-color: map-get($colors, background)
+    @include flexCenter    
+    .footerDiv
+        height: 100%
+        width: 64vw
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        font-family: 'Josefin Sans', sans-serif;
+        color: map-get($colors, darkBackground)    
+        ul
+            li
+                display: inline-block
+                margin-right: 1vw
+        div
+            font-size: 2vh
